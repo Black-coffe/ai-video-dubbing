@@ -19,7 +19,7 @@ Built and tested on **Russian → Ukrainian**. Other language pairs work through
 [Other languages](#other-languages) for what to adjust.
 
 This is the pipeline built live in a video of the YouTube channel **AI pod rabotu**:
-[youtube.com/@andrievskii](https://www.youtube.com/@andrievskii). All materials of the episodes:
+[watch the video](https://youtu.be/IT9yzqFiF9c) (in Russian), channel [youtube.com/@andrievskii](https://www.youtube.com/@andrievskii). All materials of the episodes:
 [andrievskii.site/materials](https://andrievskii.site/materials).
 
 ---
