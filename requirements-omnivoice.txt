@@ -1,0 +1,6 @@
+# Variant C voice (tts_omnivoice.py) - install into a SEPARATE venv named omni-env.
+# Install the CUDA build of torch + torchaudio first (tested: torch 2.8 + CUDA 12.8), then:
+omnivoice>=0.2.1
+numpy>=2.0
+soundfile>=0.13
+# NOTE: OmniVoice code is Apache-2.0, but its model WEIGHTS are CC-BY-NC (non-commercial only).

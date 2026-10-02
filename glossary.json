@@ -1,0 +1,21 @@
+{
+ "_comment": "One glossary for all your videos. The entries below are the real RU -> UK ones the pipeline was built with; replace them with your own. asr_prompt: hint for Whisper with terms it tends to misspell. asr_fixes: regex fixes applied to the source transcript before translation (case-insensitive). keep: names never translated, written in Latin as is. terms: how to translate specific terms. drop_phrases: phrases Whisper hallucinates on music/silence; segments containing them are removed. pronounce: for the voice only; the translation keeps text, ElevenLabs/OmniVoice receive say.",
+ "asr_prompt": "Claude Code, MCP, скиллы, Anthropic, ElevenLabs, API.",
+ "pronounce": [
+  {"text": "Claude Code", "say": "клод код", "why": "the Latin spelling was mispronounced at 01:35"}
+ ],
+ "asr_fixes": [
+  {"pattern": "\\bкод[- ]код\\w*", "replace": "Claude Code"},
+  {"pattern": "\\bклод[- ]код\\w*", "replace": "Claude Code"},
+  {"pattern": "\\bклауд[- ]код\\w*", "replace": "Claude Code"},
+  {"pattern": "\\bэм[- ]?си[- ]?пи\\b", "replace": "MCP"},
+  {"pattern": "\\bпромп\\b", "replace": "промпт"},
+  {"pattern": "\\bколонн-титул", "replace": "колонтитул"}
+ ],
+ "keep": ["Claude Code", "Claude", "MCP", "Anthropic", "ElevenLabs", "YouTube", "API"],
+ "terms": [
+  {"source": "скилл", "target": "скіл", "note": "loanword from English 'skill'; do not translate as «навичка»"},
+  {"source": "промпт", "target": "промпт"}
+ ],
+ "drop_phrases": ["Продолжение следует", "Субтитры сделал", "Субтитры создавал", "Редактор субтитров", "Спасибо за просмотр"]
+}

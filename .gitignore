@@ -1,0 +1,23 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# your media and everything the pipeline produces
+input/
+work/
+output/
+*.mp4
+*.mkv
+*.mov
+*.wav
+*.mp3
+*.m4a
+*.flac
+
+# environments and caches
+.venv/
+venv/
+omni-env/
+__pycache__/
+*.pyc

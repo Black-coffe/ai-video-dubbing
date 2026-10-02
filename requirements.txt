@@ -1,0 +1,11 @@
+# Variants A and B. Install PyTorch with GPU support FIRST, using the selector at
+# https://pytorch.org/get-started/locally/ (tested: torch 2.14 + CUDA 13.0, Python 3.12, Windows 11).
+demucs>=4.1
+faster-whisper>=1.2
+anthropic>=1.9
+requests>=2.32
+numpy>=2.0
+soundfile>=0.13
+# Windows + NVIDIA GPU: cuBLAS / cuDNN 12 DLLs for faster-whisper (dub.py finds them automatically).
+nvidia-cublas-cu12; sys_platform == "win32"
+nvidia-cudnn-cu12; sys_platform == "win32"
